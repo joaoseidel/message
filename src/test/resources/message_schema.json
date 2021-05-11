@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
+    },
+    "target": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^(EMAIL|SMS|PUSH|WHATSAPP)$"
+    },
+    "delivered": {
+      "type": "boolean"
+    },
+    "scheduleDate": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "target",
+    "body",
+    "type",
+    "delivered",
+    "scheduleDate"
+  ]
+}
