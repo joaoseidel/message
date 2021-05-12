@@ -61,6 +61,7 @@ Para obter uma cópia local, siga estas etapas simples.
 
 * Maven 3.6
 * Java 11
+* Docker
 
 ### Instalacao
 
