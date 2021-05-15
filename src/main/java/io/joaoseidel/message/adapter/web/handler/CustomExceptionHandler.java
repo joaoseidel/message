@@ -3,14 +3,13 @@ package io.joaoseidel.message.adapter.web.handler;
 import io.joaoseidel.message.application.exceptions.InvalidScheduleDateException;
 import io.joaoseidel.message.application.exceptions.MessageAlreadySentException;
 import io.joaoseidel.message.application.exceptions.MessageNotFoundException;
+import javax.validation.ConstraintViolationException;
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-
-import javax.validation.ConstraintViolationException;
 
 @ControllerAdvice
 public class CustomExceptionHandler {

@@ -1,5 +1,11 @@
 package io.joaoseidel.message.usecase;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import io.joaoseidel.message.adapter.web.model.CreateMessageModel;
 import io.joaoseidel.message.application.exceptions.InvalidScheduleDateException;
 import io.joaoseidel.message.application.port.in.ScheduleMessageUseCase.ScheduleMessageCommand;
@@ -7,19 +13,12 @@ import io.joaoseidel.message.application.port.out.PersistMessagePort;
 import io.joaoseidel.message.application.service.ScheduleMessageService;
 import io.joaoseidel.message.domain.Message;
 import io.joaoseidel.message.domain.MessageType;
+import java.time.LocalDateTime;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.time.LocalDateTime;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class ScheduleMessageUseCaseTest {

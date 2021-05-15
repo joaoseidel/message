@@ -3,14 +3,13 @@ package io.joaoseidel.message.application.port.in;
 import io.joaoseidel.message.application.exceptions.InvalidScheduleDateException;
 import io.joaoseidel.message.common.SelfValidating;
 import io.joaoseidel.message.domain.Message;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
+import java.time.LocalDateTime;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import java.time.LocalDateTime;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 public interface ScheduleMessageUseCase {
 

@@ -1,7 +1,6 @@
 package io.joaoseidel.message.archunit;
 
 import com.tngtech.archunit.core.domain.JavaClasses;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

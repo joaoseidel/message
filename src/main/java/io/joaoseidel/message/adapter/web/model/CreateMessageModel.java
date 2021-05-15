@@ -2,10 +2,9 @@ package io.joaoseidel.message.adapter.web.model;
 
 import io.joaoseidel.message.domain.MessageType;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.time.LocalDateTime;
 import lombok.Builder;
 import lombok.Getter;
-
-import java.time.LocalDateTime;
 
 @Getter
 @Builder

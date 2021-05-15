@@ -1,12 +1,11 @@
 package io.joaoseidel.message;
 
-import io.joaoseidel.message.common.SelfValidating;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import io.joaoseidel.message.common.SelfValidating;
 import javax.validation.ConstraintViolationException;
 import javax.validation.constraints.NotNull;
-
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import org.junit.jupiter.api.Test;
 
 public class SelfValidationTest {
 

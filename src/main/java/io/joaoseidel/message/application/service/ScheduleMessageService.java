@@ -5,10 +5,9 @@ import io.joaoseidel.message.application.port.in.ScheduleMessageUseCase;
 import io.joaoseidel.message.application.port.out.PersistMessagePort;
 import io.joaoseidel.message.domain.Message;
 import io.joaoseidel.message.domain.MessageType;
+import java.time.LocalDateTime;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDateTime;
 
 @Service
 @RequiredArgsConstructor

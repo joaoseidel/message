@@ -4,11 +4,10 @@ import io.joaoseidel.message.application.exceptions.MessageAlreadySentException;
 import io.joaoseidel.message.application.exceptions.MessageNotFoundException;
 import io.joaoseidel.message.common.Constraints;
 import io.joaoseidel.message.common.SelfValidating;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 public interface CancelMessageUseCase {
 

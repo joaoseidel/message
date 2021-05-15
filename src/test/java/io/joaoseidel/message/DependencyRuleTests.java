@@ -1,10 +1,10 @@
 package io.joaoseidel.message;
 
+import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
+
 import com.tngtech.archunit.core.importer.ClassFileImporter;
 import io.joaoseidel.message.archunit.HexagonalArchitecture;
 import org.junit.jupiter.api.Test;
-
-import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 
 public class DependencyRuleTests {
   @Test

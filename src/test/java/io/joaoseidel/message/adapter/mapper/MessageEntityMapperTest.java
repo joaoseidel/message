@@ -1,15 +1,14 @@
 package io.joaoseidel.message.adapter.mapper;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.joaoseidel.message.adapter.entity.MessageEntity;
 import io.joaoseidel.message.domain.Message;
 import io.joaoseidel.message.domain.MessageType;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.time.LocalDateTime;
 import java.util.UUID;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class MessageEntityMapperTest {
 
